@@ -1,0 +1,112 @@
+/* 诗词相关样式 */
+
+/* 古典风格的颜色变量 */
+:root {
+  --primary-color: #8c4b2a;
+  --primary-light: #a56b4a;
+  --primary-dark: #6a381f;
+  --bg-color: #f8f4e9;
+  --bg-light: #fff;
+  --bg-dark: #e6d9c2;
+  --text-color: #333;
+  --text-light: #666;
+  --border-color: #e6d9c2;
+}
+
+/* 古典字体设置 */
+.classical-font {
+  font-family: "SimSun", "STSong", "FangSong", serif;
+}
+
+/* 诗词内容样式 */
+.poem-content {
+  font-family: "SimSun", "STSong", "FangSong", serif;
+  text-align: center;
+}
+
+/* 诗词标题样式 */
+.poem-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* 诗词作者和朝代样式 */
+.poem-meta {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* 诗词标签样式 */
+.poem-tag {
+  background-color: var(--bg-dark);
+  color: var(--primary-color);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* 诗词卡片样式 */
+.poem-card {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.poem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 诗词详情页样式 */
+.poem-detail {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 诗词注释样式 */
+.poem-note {
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* 按钮样式 */
+.classical-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.classical-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* 链接样式 */
+.classical-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.classical-link:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .poem-content {
+    font-size: 1rem;
+  }
+  
+  .poem-title {
+    font-size: 1.8rem;
+  }
+}
